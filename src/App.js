@@ -1,7 +1,7 @@
 import React from "react";
-import Sidebar from "./Sidebar";
-import Feed from "./Feed";
-import Widgets from "./Widgets";
+import Sidebar from "./Sidebar.js";
+import Feed from "./Feed.js";
+import Widgets from "./Widgets.js";
 import "./App.css";
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
     // BEM
     <div className="app">
       <Sidebar />
-      <Feed />
-      <Widgets />
+      {/* <Feed />
+      <Widgets /> */}
     </div>
   );
 }

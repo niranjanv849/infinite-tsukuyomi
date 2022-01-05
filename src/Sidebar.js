@@ -14,10 +14,7 @@ import { Button } from "@material-ui/core";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <LocalFireDepartmentIcon
-        fontSize="large"
-        className="sidebar__twitterIcon"
-      />
+      <LocalFireDepartmentIcon className="sidebar__Icon" />
 
       <SidebarOption active Icon={HomeIcon} text="Home" />
       <SidebarOption Icon={PermIdentityIcon} text="Profile" />

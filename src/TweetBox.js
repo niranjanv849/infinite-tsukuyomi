@@ -4,18 +4,18 @@ import { Avatar, Button } from "@material-ui/core";
 
 function TweetBox() {
   return (
-    <div className="tweetBox">
+    <div className="PostBox">
       <form>
-        <div className="tweetBox__input">
+        <div className="PostBox__input">
           <Avatar src="https://i.ibb.co/6wJg9HP/Picture1.png" />
           <input placeholder="Write the Trends" type="text"></input>
         </div>
         <input
-          className="tweetBox__imageInput"
-          placeholder="Optional: Enter Image URL"
+          className="PostBox__imageInput"
+          placeholder="       Optional: Enter Image URL"
           type="text"
         ></input>
-        <Button className="tweetBox__tweetButton">Post</Button>
+        <Button className="PostBox__PostButton">Post</Button>
       </form>
     </div>
   );

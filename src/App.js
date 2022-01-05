@@ -9,8 +9,8 @@ function App() {
     // BEM
     <div className="app">
       <Sidebar />
-      {/* <Feed />
-      <Widgets /> */}
+      <Feed />
+      <Widgets />
     </div>
   );
 }

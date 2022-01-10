@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import TweetBox from "./TweetBox";
 import Post from "./Post";
 import "./Feed.css";
-import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import db from "./firebase";
 import FlipMove from "react-flip-move";
 

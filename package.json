@@ -12,8 +12,10 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "firebase": "^9.6.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-flip-move": "^3.0.4",
     "react-scripts": "5.0.0",
     "react-twitter-embed": "^3.0.3",
     "web-vitals": "^2.1.2"

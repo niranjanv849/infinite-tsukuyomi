@@ -2,17 +2,18 @@ import React, { useState, useEffect } from "react";
 import TweetBox from "./TweetBox";
 import Post from "./Post";
 import "./Feed.css";
-import PeopleAltIcon from "@mui/icons-material/PeopleAlt"; // import db from "./firebase";
-// import FlipMove from "react-flip-move";
+import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
+import db from "./firebase";
+import FlipMove from "react-flip-move";
 
 function Feed() {
-  //   const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([]);
 
-  //   useEffect(() => {
-  //     db.collection("posts").onSnapshot((snapshot) =>
-  //       setPosts(snapshot.docs.map((doc) => doc.data()))
-  //     );
-  //   }, []);
+  useEffect(() => {
+    db.collection("posts").onSnapshot((snapshot) =>
+      setPosts(snapshot.docs.map((doc) => doc.data()))
+    );
+  }, []);
 
   return (
     <div className="feed">
@@ -21,13 +22,7 @@ function Feed() {
       </div>
 
       <TweetBox />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-
-      {/* <FlipMove>
+      <FlipMove>
         {posts.map((post) => (
           <Post
             key={post.text}
@@ -39,7 +34,7 @@ function Feed() {
             image={post.image}
           />
         ))}
-      </FlipMove> */}
+      </FlipMove>
     </div>
   );
 }

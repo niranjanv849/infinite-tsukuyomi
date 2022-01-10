@@ -11,6 +11,10 @@
 }
 
 .post__body > img {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+  align-items: flex-end;
   border-radius: 20px;
 }
 

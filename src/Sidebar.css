@@ -43,3 +43,25 @@
   margin-top: 20px !important;
   margin-left: 18px;
 }
+
+.side__head {
+  /* display: flex; */
+  /* flex-direction: row; */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text__top {
+  font-size: 30px;
+  color: purple;
+  font-weight: 750;
+}
+
+.text__bottom {
+  font-size: 18px;
+  display: flex;
+}
+
+.bold__username {
+  font-weight: 650;
+}

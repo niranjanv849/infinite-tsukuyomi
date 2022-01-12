@@ -1,0 +1,27 @@
+.login__container > img {
+  width: 20px;
+  height: 20px;
+}
+
+.login__container {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: rgb(243, 239, 239);
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.login__container > p {
+  font-weight: 500;
+  font-size: 17px;
+  color: blue;
+  margin-bottom: 2px;
+}
+.login {
+  align-items: center;
+}

@@ -3,7 +3,7 @@ import Sidebar from "./Sidebar.js";
 import Feed from "./Feed.js";
 import Widgets from "./Widgets.js";
 import "./App.css";
-import Signin from "./Signin.js";
+import Login from "./Login.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
             <Widgets />
           </Route>
 
-          <Route path="/login">
-            <Signin/>
+          <Route path="/niran">
+            <Login />
           </Route>
         </Switch>
       </div>

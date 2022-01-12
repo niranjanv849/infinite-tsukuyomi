@@ -21,14 +21,16 @@ function Sidebar() {
         <br></br>
       </div>
 
-      <SidebarOption active Icon={HomeIcon} text="Home" />
+      <Link to="/" className="linkto">
+        <SidebarOption active Icon={HomeIcon} text="Home" />
+      </Link>
       <SidebarOption Icon={PermIdentityIcon} text="Profile" />
       <SidebarOption Icon={SearchIcon} text="Explore" />
       <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
       {/* <SidebarOption Icon={LoginIcon} text="Login" /> */}
-      {/* <a href="/login"> */}
-      <SidebarOption Icon={LogoutIcon} text="Logout" />
-      {/* </a> */}
+      <Link to="/login" className="linktologin">
+        <SidebarOption Icon={LogoutIcon} text="Logout" />
+      </Link>
 
       <Button variant="outlined" className="sidebar__tweet" fullWidth>
         Create Post

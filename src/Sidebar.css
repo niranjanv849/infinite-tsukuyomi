@@ -65,3 +65,11 @@
 .bold__username {
   font-weight: 650;
 }
+
+.linkto {
+  text-decoration: none;
+}
+
+.linktologin{
+  text-decoration:none
+}

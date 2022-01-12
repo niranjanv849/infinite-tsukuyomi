@@ -7,6 +7,7 @@ import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -25,7 +26,9 @@ function Sidebar() {
       <SidebarOption Icon={SearchIcon} text="Explore" />
       <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
       {/* <SidebarOption Icon={LoginIcon} text="Login" /> */}
+      {/* <a href="/login"> */}
       <SidebarOption Icon={LogoutIcon} text="Logout" />
+      {/* </a> */}
 
       <Button variant="outlined" className="sidebar__tweet" fullWidth>
         Create Post

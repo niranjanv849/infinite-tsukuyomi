@@ -18,7 +18,7 @@ function App() {
             <Widgets />
           </Route>
 
-          <Route path="/niran">
+          <Route path="/login">
             <Login />
           </Route>
         </Switch>

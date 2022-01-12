@@ -16,5 +16,18 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    <script>
+      $(window).on("load", function () {
+        // makes sure the whole site is loaded
+        $("#status").fadeOut(); // will first fade out the loading animation
+        $("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV
+        $("body").delay(350).css({ overflow: "visible" });
+      });
+    </script>
   </body>
 </html>

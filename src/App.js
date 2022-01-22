@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
-          <Route path="/">
+          <Route path="/" exact>
             <Sidebar />
             <Feed />
             <Widgets />
